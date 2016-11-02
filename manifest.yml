@@ -4,10 +4,10 @@ declared-services:
     label: alchemy_api
     plan: free
 applications:
-- name: sentiment-and-emotion
+- name: SupportSentiment
   command: node app.js
   path: .
-  memory: 1G
+  memory: 256M
   services:
   - alchemy-service
   env:
